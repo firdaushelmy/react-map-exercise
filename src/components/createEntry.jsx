@@ -2,7 +2,7 @@ import React from 'react'
 import Entry from './Entry'
 import emojipedia from './emojipedia'
 
-function createEntry() {
+function createEntry(emojipedia) {
   return (
     <Entry
       key={emojipedia.id}
