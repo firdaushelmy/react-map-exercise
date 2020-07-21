@@ -1,17 +1,6 @@
 import React from 'react';
-import Entry from './Entry'
+import createEntry from './createEntry'
 import emojipedia from './emojipedia';
-
-function createEntry(emojipedia) {
-  return (
-    <Entry
-      key={emojipedia.id}
-      emoji={emojipedia.emoji}
-      name={emojipedia.name}
-      meaning={emojipedia.meaning}
-    />
-  )
-}
 
 function App() {
   return (
