@@ -1,8 +1,8 @@
 import React from 'react';
 import Entry from './Entry';
 
-function createEntry(emojiterm) {
-  return (
+const createEntry = emojiterm =>
+  (
     <Entry
       key={emojiterm.id}
       emoji={emojiterm.emoji}
@@ -10,6 +10,5 @@ function createEntry(emojiterm) {
       meaning={emojiterm.meaning}
     />
   )
-}
 
 export default createEntry;
